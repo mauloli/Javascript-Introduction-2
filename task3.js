@@ -12,7 +12,12 @@ seleksiNilai = (nilaiAwal, nilaiAkhir, Arr) => {
         })
     }
     let outputSort = output.sort(function (a, b) { return a - b });
-    console.log(outputSort)
+
+    if (output.length < 1) {
+        console.log('data tidak ditemukan')
+    } else {
+        console.log(outputSort)
+    }
 }
 
-seleksiNilai(3, 10, [4, 5, 12, 10, 15, 9])
+seleksiNilai(3, 10, [9, 13, 12, 114, 15, 19])
